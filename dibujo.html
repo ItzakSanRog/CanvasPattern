@@ -8,8 +8,47 @@
 </head>
 <body>
     <h1>Dibujando con canvas</h1>
-    <canvas id=dibujito width="400" height="600"></canvas>
+    <p>
+        Selecciona en que esquinas quieres dibujar
+    </p>
+    <form action="">
+        <label for="superior_izqierda">
+            <input id="checkbox_superior_izqierda" type="checkbox" name="esquina"> Superior izqierda
+        </label>
+        <br>
+        <label for="superior_derecha">
+            <input id="checkbox_superior_derecha" type="checkbox" name="esquina"> Superior derecha
+        </label>
+        <br>
+        <label for="inferior_izquierda">
+            <input id="checkbox_inferior_izquierda" type="checkbox" name="esquina"> Inferior izquierda
+        </label>
+        <br>
+        <label for="inferior_derecha">
+            <input id="checkbox_inferior_derecha" type="checkbox" name="esquina"> Inferior derecha
+        </label>
+        <br>
+        <label for="espiral_cuadrada">
+            <input id="checkbox_espiral_Cuadrada" type="checkbox" name="esquina">  Espiral cuadrada
+        </label>  
+    </form>
+
+    <p>Agrega el numero de lineas</p>
     
+    <form action="">
+        <label for="input_lineas">
+            <input id="input_text_lineas" type="text">
+            <input id="boton_dibujar" type="button" value="Dibujar">
+        </label>
+    </form>
+
+
+    <br>
+    <canvas id=dibujito width="700" height="400"></canvas>
+    <br>
+    <label for="limpiar">
+        <input id="boton_limpiar" type="button" value="Limpiar lienzo">
+    </label>
     <script src="dibujo.js"></script>
 </body>
 </html>
